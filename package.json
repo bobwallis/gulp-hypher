@@ -1,0 +1,37 @@
+{
+  "name": "gulp-hypher",
+  "version": "0.0.1",
+  "description": "Preprocess HTML with Hypher",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasconstantino/gulp-typeset.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "hyphenation",
+    "hypher",
+    "html"
+  ],
+  "author": "Robert Wallis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobwallis/gulp-hypher/issues"
+  },
+  "homepage": "https://github.com/bobwallis/gulp-hypher#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "gulp-util": "^3.0.6",
+    "hypher": "^0.2.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "hyphenation.en-gb": "^0.2.1",
+    "mocha": "^2.2.5"
+  }
+}
