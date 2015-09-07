@@ -27,3 +27,5 @@ gulp.task('default', function () {
 		.pipe(gulp.dest('dist'));
 });
 ```
+
+This will add soft hyphens to all text nodes in the HTML passed.

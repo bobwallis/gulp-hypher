@@ -1,6 +1,6 @@
 {
   "name": "gulp-hypher",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "Preprocess HTML with Hypher",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasconstantino/gulp-typeset.git"
+    "url": "git+https://github.com/bobwallis/gulp-hypher.git"
   },
   "keywords": [
     "gulp",
