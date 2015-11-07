@@ -19,11 +19,11 @@ Replacing en-us with the relevant hyphenation pattern for your language.
 ```js
 var gulp = require('gulp');
 var hypher = require('gulp-hypher');
-var hypher_en-us = require('hyphenation.en-us')
+var hypher_en_us = require('hyphenation.en-us');
 
 gulp.task('default', function () {
 	return gulp.src('index.html')
-		.pipe(hypher(hypher_en-us))
+		.pipe(hypher(hypher_en_us))
 		.pipe(gulp.dest('dist'));
 });
 ```
