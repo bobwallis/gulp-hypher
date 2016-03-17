@@ -12,7 +12,13 @@ function gulpHypher(hyphenation_pattern) {
   }
   var h = new hypher(hyphenation_pattern);
   var hyphenateText = function(text) {
-    return h.hyphenateText(text);
+    // split the text in html entity and not entity
+    return text.split(/(!?&[a-zA-Z]*;)/).map((textPart) => {
+      // immediately return html entities and hyphenate everything else
+      return textPart.match(/&[a-zA-Z]*;/)
+        ? textPart
+        : h.hyphenateText(textPart);
+    }).join('');
   };
 
   return through.obj(function (file, enc, cb) {
